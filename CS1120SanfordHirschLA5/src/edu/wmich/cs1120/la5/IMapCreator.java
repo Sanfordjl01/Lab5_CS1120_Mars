@@ -15,6 +15,22 @@
 
 package edu.wmich.cs1120.la5;
 
+import java.io.IOException;
+
 public interface IMapCreator {
 
+	/**
+	 * 
+	 * @param fileName
+	 * @param threshold
+	 * @throws IOException
+	 */
+	void scanTerrain(String fileName, int threshold) throws IOException;
+	
+	/**
+	 * 
+	 * @return
+	 */
+	TerrainScanner getScanner();
+	void setScanner(TerrainScanner scanner);
 }

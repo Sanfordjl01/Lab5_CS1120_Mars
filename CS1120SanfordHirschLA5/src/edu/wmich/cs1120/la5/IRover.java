@@ -15,6 +15,41 @@
 
 package edu.wmich.cs1120.la5;
 
+import java.util.ArrayList;
+
 public interface IRover {
 
+	/**
+	 * 
+	 * @return
+	 */
+	ArrayList<IArea> getPath();
+	
+	/**
+	 * 
+	 * @param path
+	 */
+	void setPath(ArrayList<IArea> path);
+	/**
+	 * 
+	 */
+	void analyzePath();
+	
+	/**
+	 * 
+	 * @return
+	 */
+	String getAnalysis();
+	
+	/**
+	 * 
+	 * @param analysis
+	 */
+	void setAnalysis(String analysis);
+	
+	/**
+	 * 
+	 * @return
+	 */
+	String toString();
 }
