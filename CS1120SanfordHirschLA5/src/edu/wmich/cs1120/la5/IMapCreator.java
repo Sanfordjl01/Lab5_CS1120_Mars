@@ -32,5 +32,10 @@ public interface IMapCreator {
 	 * @return
 	 */
 	TerrainScanner getScanner();
+	
+	/**
+	 * 
+	 * @param scanner
+	 */
 	void setScanner(TerrainScanner scanner);
 }

@@ -19,21 +19,29 @@ import java.util.ArrayList;
 
 public class EnergyAnalyzer implements IRover {
 
+	ArrayList<IArea> path;
+	double result;
+	
+	
 	@Override
 	public ArrayList<IArea> getPath() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return path;
 	}
 
 	@Override
 	public void setPath(ArrayList<IArea> path) {
-		// TODO Auto-generated method stub
+		this.path = path;
 		
 	}
 
 	@Override
 	public void analyzePath() {
-		// TODO Auto-generated method stub
+		
+		result = 0;
+		for (int i = 0; i < path.size(); i++) {
+			// TODO have Area implemented
+		}
 		
 	}
 
@@ -49,4 +57,8 @@ public class EnergyAnalyzer implements IRover {
 		
 	}
 
+	public String toString() {
+		return "Energy Analyzer";
+	}
+	
 }

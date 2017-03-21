@@ -15,6 +15,6 @@
 
 package edu.wmich.cs1120.la5;
 
-public class Literal {
+public class Literal implements IExpression {
 
 }
