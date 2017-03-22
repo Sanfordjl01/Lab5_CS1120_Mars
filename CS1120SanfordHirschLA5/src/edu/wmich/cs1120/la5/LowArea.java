@@ -16,5 +16,19 @@
 package edu.wmich.cs1120.la5;
 
 public class LowArea extends Area {
+	/**
+	 * IsLow is used to determine if a location is of low value and returns a boolean value
+	 * of true or false to help the program make the correct choice. 
+	 * @return
+	 */
+	public boolean IsLow(){
+			
+			if ((radiation<0.5) && (elevation>(threshold * 0.5))){
+				return false;
+			}
+			else{
+				return true; 
+			}
+		}
 
 }

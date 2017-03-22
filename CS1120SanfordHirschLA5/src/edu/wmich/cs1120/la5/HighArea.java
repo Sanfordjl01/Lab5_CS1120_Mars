@@ -16,5 +16,19 @@
 package edu.wmich.cs1120.la5;
 
 public class HighArea extends Area {
+	/**
+	 * IsHigh is used to determine if a location is of high value and returns a boolean value
+	 * of true or false to help the program make the correct choice. 
+	 * @return
+	 */
+	public boolean IsHigh(){
+		
+		if (radiation>= 0.5){
+			return true;
+		}
+		else{
+			return false; 
+		}
+	}
 
 }
