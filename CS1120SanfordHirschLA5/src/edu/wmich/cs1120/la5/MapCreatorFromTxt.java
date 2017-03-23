@@ -23,7 +23,7 @@ import java.io.IOException;
 public class MapCreatorFromTxt implements IMapCreator {
 
 	TerrainScanner tScanner = new TerrainScanner();
-	private Area path[][] = new Area[10][10];
+	//private Area path[][] = new Area[10][10];
 	private double [][] elevations = new double[SIZE][SIZE];
 	private static final int SIZE = 10;
 
