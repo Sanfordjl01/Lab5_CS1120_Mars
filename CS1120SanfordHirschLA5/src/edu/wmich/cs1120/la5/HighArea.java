@@ -17,6 +17,58 @@
 package edu.wmich.cs1120.la5;
 
 public class HighArea extends Area {
+	
+	final public int HIGH_FACTOR = 4;
+	
+	/**
+	 * Class constructor specifying the defining attributes
+	 * @param bEnergy  basic energy cost for this Area
+	 * @param elev  elevation for this Area
+	 * @param rad  radiation for this Area
+	 */
+	public HighArea(double bEnergy, double elev, double rad) {
+		super(bEnergy, elev, rad);
+	}
+
+
+	public double getBasicEnergyCost() {
+		return basicEnergyCost;
+	}
+
+	@Override
+	public void setBasicEnergyCost(double basicEnergyCost) {
+		this.basicEnergyCost = basicEnergyCost;
+	}
+
+	@Override
+	public double getElevation() {
+		return elevation;
+	}
+
+	@Override
+	public void setElevation(double elevation) {
+		this.elevation = elevation;
+	}
+
+	@Override
+	public double getRadiation() {
+		return radiation;
+	}
+
+	@Override
+	public void setRadiation(double radiation) {
+		this.radiation = radiation;
+	}
+	
+	@Override
+	public double calcConsumedEnergy() {
+
+		return basicEnergyCost * HIGH_FACTOR;
+	}
+	
+	
+	
+	
 	/**
 	 * IsHigh is used to determine if a location is of high value and returns a boolean value
 	 * of true or false to help the program make the correct choice. 

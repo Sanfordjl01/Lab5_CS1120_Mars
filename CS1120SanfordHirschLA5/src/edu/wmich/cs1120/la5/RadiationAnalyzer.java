@@ -56,4 +56,8 @@ public class RadiationAnalyzer implements IRover {
 		
 	}
 
+	public String toString() {
+		return "Radiation Analyzer";
+	}
+	
 }

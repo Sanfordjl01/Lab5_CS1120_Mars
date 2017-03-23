@@ -22,7 +22,7 @@ import java.io.IOException;
 
 public class MapCreatorFromTxt implements IMapCreator {
 
-	TerrainScanner obj = new TerrainScanner();
+	TerrainScanner tScanner = new TerrainScanner();
 	private Area path[][] = new Area[10][10];
 	private double [][] elevations = new double[SIZE][SIZE];
 	private static final int SIZE = 10;
@@ -37,15 +37,48 @@ public class MapCreatorFromTxt implements IMapCreator {
 		try
 		{
 			FileReader fr = new FileReader(fileName);
-			@SuppressWarnings("resource")
+			//@SuppressWarnings("resource")
 			BufferedReader reader = new BufferedReader(fr); 
-		    String line = null;
-		    String [] values=null;
+/*		    String line = null;
+		    String [] values=null;*/
 		    
-		    		for(int i=0;i<SIZE;i++)
+		    Area[][] tempTerrainBuilder = new Area[SIZE][SIZE];
+		    
+		    // scan text file and parse data into Area objects
+		    for (int y = 0; y < SIZE; y++) {
+		    	for (int x = 0; x < SIZE; x++) {
+		    		
+		    		String[] line = reader.readLine().split(" ");
+		    		
+		    		double[] data = parseLineFromSource(line);
+		    		
+		    		if (data[2] >= 0.5 || (data[2] < 0.5 && data[1] > threshold * 0.5)) {
+		    			tempTerrainBuilder[y][x] = new HighArea(data[0], data[1], data[2]);
+		    		}
+		    		else {
+		    			tempTerrainBuilder[y][x] = new LowArea(data[0], data[1], data[2]);
+		    		}
+		    		
+		    	}
+		    }
+			
+		    // close text file
+		    reader.close();
+		    fr.close();
+		    
+		    // sends terrain data to TerrainScanner class
+		    tScanner.setTerrain(tempTerrainBuilder);
+		    
+		    
+		    
+		    		/*for(int i=0;i<SIZE;i++)
 		    		{
 		    			for(int j=0;j<SIZE;j++)
 		    			{
+		    				
+		    				
+		    				
+		    				
 		    						if((line = reader.readLine())!=null)
 		    			    		values = line.split(" ");
 		    			    		Area a = new Area();
@@ -54,7 +87,7 @@ public class MapCreatorFromTxt implements IMapCreator {
 		    			    		a.setRadiation(Double.valueOf(values[2]));
 		    			    		path[i][j] = a;
 		    			}
-		    		}
+		    		}*/
 		} 
 		
 		catch(IOException x) {
@@ -68,13 +101,13 @@ public class MapCreatorFromTxt implements IMapCreator {
 	 * return the Scanner. 
 	 */
 	public TerrainScanner getScanner() {
-		obj.setTerrain(path);
-		return obj;
+		//tScanner.setTerrain(path);
+		return tScanner;
 	}
 
 	@Override
 	public void setScanner(TerrainScanner scanner) {
-		obj = scanner;
+		tScanner = scanner;
 	}
 	
 	public char[][] generateMap (int threshold){
@@ -102,4 +135,24 @@ public class MapCreatorFromTxt implements IMapCreator {
 		return elevations[row][col] <= threshold;
 	}
 
+	/**
+	 * Converts incoming string data into double float representation.
+	 * It is assumed data is safe coming in as source is known.
+	 * 
+	 * @param source pre-sorted string data representing energy/elevation/radiation
+	 * @return an {@link Area}
+	 */
+	private double[] parseLineFromSource(String[] source) {
+		
+		double[] result;
+		
+	    result = new double[] { Double.parseDouble(source[0].trim()), 
+	    		Double.parseDouble(source[1].trim()), Double.parseDouble(source[2].trim()) };
+		
+	    return result;
+	   // return new Area(result[0], result[1], result[2]);
+		
+	}
+	
+	
 }

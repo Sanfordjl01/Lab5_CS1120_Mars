@@ -35,11 +35,12 @@ public class MapCreatorFromDat implements IMapCreator{
 		DataInputStream data_in = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(fileName))));
 		while(true) {
             try {
+            	
             	for(int i=0;i<10;i++)
 	    		{
 	    			for(int j=0;j<10;j++)
 	    			{
-		            	Area area = new Area();
+		            	Area area = new Area(4,5,6);
 		            	int count=1;
 		            	for(int k=0;k<3;k++)
 		            	{

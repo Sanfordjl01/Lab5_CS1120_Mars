@@ -57,4 +57,8 @@ public class ElevationAnalyzer implements IRover {
 		
 	}
 
+	public String toString() {
+		return "Elevation Analyzer";
+	}
+	
 }
