@@ -24,5 +24,4 @@ public class LA5Main {
 		MainWindow.startGUI();
 		
 	}
-
 }

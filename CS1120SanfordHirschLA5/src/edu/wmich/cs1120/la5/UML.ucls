@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <interface id="1" language="java" name="edu.wmich.cs1120.la5.IArea" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/IArea.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="187" x="937" y="683"/>    
+    <position height="-1" width="-1" x="397" y="766"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </interface>  
   <class id="2" language="java" name="edu.wmich.cs1120.la5.Literal" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/Literal.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="112" x="318" y="63"/>    
+    <position height="-1" width="-1" x="120" y="297"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="edu.wmich.cs1120.la5.MapCreatorFromDat" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/MapCreatorFromDat.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="187" x="1099" y="63"/>    
+    <position height="-1" width="-1" x="721" y="505"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="edu.wmich.cs1120.la5.ExpressionFactory" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/ExpressionFactory.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="211" x="67" y="63"/>    
+    <position height="-1" width="-1" x="241" y="177"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <interface id="5" language="java" name="edu.wmich.cs1120.la5.IExpression" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/IExpression.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="112" x="318" y="328"/>    
+    <position height="-1" width="-1" x="336" y="301"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </interface>  
   <class id="6" language="java" name="edu.wmich.cs1120.la5.LowArea" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/LowArea.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="105" x="1294" y="683"/>    
+    <position height="-1" width="-1" x="875" y="674"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="edu.wmich.cs1120.la5.HighArea" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/HighArea.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="104" x="1439" y="683"/>    
+    <position height="-1" width="-1" x="1004" y="674"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +66,7 @@
   </class>  
   <class id="8" language="java" name="edu.wmich.cs1120.la5.ElevationAnalyzer" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/ElevationAnalyzer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="176" x="686" y="328"/>    
+    <position height="-1" width="-1" x="308" y="494"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +75,7 @@
   </class>  
   <class id="9" language="java" name="edu.wmich.cs1120.la5.LA5Main" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/LA5Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="136" width="184" x="685" y="40"/>    
+    <position height="136" width="184" x="376" y="13"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -84,7 +84,7 @@
   </class>  
   <class id="10" language="java" name="edu.wmich.cs1120.la5.Subtraction" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/Subtraction.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="223" x="1559" y="63"/>    
+    <position height="-1" width="-1" x="639" y="805"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -93,7 +93,7 @@
   </class>  
   <interface id="11" language="java" name="edu.wmich.cs1120.la5.IMapCreator" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/IMapCreator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="187" x="1139" y="328"/>    
+    <position height="-1" width="-1" x="737" y="344"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -102,7 +102,7 @@
   </interface>  
   <interface id="12" language="java" name="edu.wmich.cs1120.la5.IRover" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/IRover.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="176" x="686" y="683"/>    
+    <position height="-1" width="-1" x="122" y="724"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -111,7 +111,7 @@
   </interface>  
   <class id="13" language="java" name="edu.wmich.cs1120.la5.Area" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/Area.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="315" width="187" x="1366" y="328"/>    
+    <position height="-1" width="-1" x="955" y="441"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -120,7 +120,7 @@
   </class>  
   <class id="14" language="java" name="edu.wmich.cs1120.la5.BinaryExpression" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/BinaryExpression.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="124" x="470" y="63"/>    
+    <position height="-1" width="-1" x="524" y="301"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -129,7 +129,7 @@
   </class>  
   <class id="15" language="java" name="edu.wmich.cs1120.la5.EnergyAnalyzer" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/EnergyAnalyzer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="176" x="470" y="328"/>    
+    <position height="-1" width="-1" x="104" y="489"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -138,7 +138,7 @@
   </class>  
   <class id="16" language="java" name="edu.wmich.cs1120.la5.MapCreatorFromTxt" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/MapCreatorFromTxt.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="193" x="1326" y="63"/>    
+    <position height="-1" width="-1" x="740" y="143"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -147,7 +147,7 @@
   </class>  
   <class id="17" language="java" name="edu.wmich.cs1120.la5.RadiationAnalyzer" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/RadiationAnalyzer.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="176" x="902" y="328"/>    
+    <position height="-1" width="-1" x="515" y="499"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -156,7 +156,7 @@
   </class>  
   <class id="18" language="java" name="edu.wmich.cs1120.la5.Addition" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/Addition.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="223" x="1822" y="63"/>    
+    <position height="-1" width="-1" x="894" y="806"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -165,7 +165,7 @@
   </class>  
   <interface id="19" language="java" name="edu.wmich.cs1120.la5.IOperation" project="CS1120SanfordHirschLA5" 
     file="/CS1120SanfordHirschLA5/src/edu/wmich/cs1120/la5/IOperation.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="223" x="1691" y="328"/>    
+    <position height="-1" width="-1" x="724" y="926"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -176,110 +176,111 @@
     <end type="SOURCE" refId="15"/>    
     <end type="TARGET" refId="12"/>  
   </realization>  
-  <association id="21">    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="22" name="path">        
+  <realization id="21">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <association id="22">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="23" name="path">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="23" minimum="0" maximum="2147483647">        
+      <multiplicity id="24" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="25">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="26" name="list">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="27" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="28">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="29">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <association id="31">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="32" name="path">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="33" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="24">    
-    <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <generalization id="25">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <realization id="26">    
-    <end type="SOURCE" refId="16"/>    
-    <end type="TARGET" refId="11"/>  
-  </realization>  
-  <realization id="27">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="12"/>  
-  </realization>  
-  <association id="28">    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="29" name="list">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="30" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="31">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="12"/>  
-  </realization>  
-  <association id="32">    
-    <bendpoint x="1108" y="328"/>    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="33" name="path">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="34" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="35">    
-    <end type="SOURCE" refId="10"/>    
+  <realization id="34">    
+    <end type="SOURCE" refId="18"/>    
     <end type="TARGET" refId="19"/>  
   </realization>  
-  <association id="36">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="37" name="path">        
+  <association id="35">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="36" name="path">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="38" minimum="0" maximum="2147483647">        
+      <multiplicity id="37" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="39">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <realization id="40">    
+  <association id="38">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="39" name="path">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="40" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="41">    
+    <bendpoint x="836" y="585"/>    
     <end type="SOURCE" refId="13"/>    
     <end type="TARGET" refId="1"/>  
   </realization>  
-  <association id="41">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="42" name="path">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="43" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="44">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="11"/>  
-  </realization>  
-  <generalization id="45">    
+  <generalization id="42">    
     <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="13"/>  
   </generalization>  
-  <realization id="46">    
-    <end type="SOURCE" refId="18"/>    
+  <realization id="43">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <realization id="44">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <realization id="45">    
+    <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="19"/>  
+  </realization>  
+  <realization id="46">    
+    <bendpoint x="389" y="613"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="12"/>  
   </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
