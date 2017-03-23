@@ -12,6 +12,7 @@
  * Class: XXXXXXXX
  * Purpose: XXXXXXXXXXXXX
  * **********************************************
+ * 
  */
 
 package edu.wmich.cs1120.la5;
