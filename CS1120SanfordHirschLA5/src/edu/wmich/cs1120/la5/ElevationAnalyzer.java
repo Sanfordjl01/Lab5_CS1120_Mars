@@ -18,34 +18,41 @@ package edu.wmich.cs1120.la5;
 import java.util.ArrayList;
 
 public class ElevationAnalyzer implements IRover {
-
+	ArrayList<IArea> path;
+	double result;
 	@Override
 	public ArrayList<IArea> getPath() {
 		// TODO Auto-generated method stub
-		return null;
+		return path;
 	}
 
 	@Override
 	public void setPath(ArrayList<IArea> path) {
 		// TODO Auto-generated method stub
-		
+		this.path = path;
 	}
 
 	@Override
 	public void analyzePath() {
-		// TODO Auto-generated method stub
-		
+		result = 0;
+		double sum = 0;
+		for (int i = 0; i < path.size(); i++) {
+			// TODO have Area implemented
+			
+			sum += path.get(i).getElevation();
+		}
+		result = sum / path.size();
 	}
 
 	@Override
 	public String getAnalysis() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Average Elevation: "+Double.toString(result);
 	}
 
 	@Override
 	public void setAnalysis(String analysis) {
-		// TODO Auto-generated method stub
+		result = Double.parseDouble(analysis);
 		
 	}
 

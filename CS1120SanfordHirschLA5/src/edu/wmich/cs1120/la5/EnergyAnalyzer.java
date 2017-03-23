@@ -41,19 +41,22 @@ public class EnergyAnalyzer implements IRover {
 		result = 0;
 		for (int i = 0; i < path.size(); i++) {
 			// TODO have Area implemented
+			
+			result += path.get(i).calcConsumedEnergy();
 		}
 		
 	}
 
 	@Override
 	public String getAnalysis() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return "Total Energy: "+Double.toString(result);
 	}
 
 	@Override
 	public void setAnalysis(String analysis) {
-		// TODO Auto-generated method stub
+		
+		result = Double.parseDouble(analysis);
 		
 	}
 

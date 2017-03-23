@@ -25,7 +25,23 @@ public class ExpressionFactory {
 	 * @return
 	 */
 	public static IExpression getExpression(char operator, int val1, int val2) {
-		return null;
-		
+			BinaryExpression exp = new BinaryExpression();
+			Literal lit1 = new Literal();
+			lit1.val = val1;
+			Literal lit2 = new Literal();
+			lit2.val = val2;
+			if(operator == '+')
+			{
+				Addition add = new Addition();
+				exp.value = add.perform(lit1, lit2);
+			}
+			
+			else if(operator == '-')
+			{
+				Subtraction sub = new Subtraction();
+				exp.value = sub.perform(lit1, lit2);
+			}
+			
+			return exp;
 	}
 }
