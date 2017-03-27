@@ -1,6 +1,4 @@
 /************************************************
- * @author : Jonathan Sanford
- * @author : Chad Hirsch
  * Class: CS II - 1120 - Thur - 2:30pm
  * Lab 5 - Mars Rover 2.0
  * Due 03/30/2017 - 11:59pm
@@ -8,10 +6,6 @@
  * Program Purpose: Simulates a rover on Mars.
  * Limited user inputs.
  * **********************************************
- * Class: XXXXXXXX
- * Purpose: XXXXXXXXXXXXX
- * **********************************************
- * 
  */
 
 package edu.wmich.cs1120.la5;
@@ -20,12 +14,16 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * This class takes a text file and interprets the data within and sends it to the TerrainScanner.
+ * 
+ * @author : Jonathan Sanford
+ * @author : Chad Hirsch
+ */
 public class MapCreatorFromTxt implements IMapCreator {
 
-	TerrainScanner tScanner = new TerrainScanner();
-	//private Area path[][] = new Area[10][10];
-	private double [][] elevations = new double[SIZE][SIZE];
-	private static final int SIZE = 10;
+	TerrainScanner tScanner = new TerrainScanner();  // provides access to public TerrainScanner methods 
+	private static final int SIZE = 10; // fixed size of Area
 
 	/**
 	 * This scanTerrain method take in the file name and the threshold from the GUI. 
@@ -37,10 +35,7 @@ public class MapCreatorFromTxt implements IMapCreator {
 		try
 		{
 			FileReader fr = new FileReader(fileName);
-			//@SuppressWarnings("resource")
 			BufferedReader reader = new BufferedReader(fr); 
-/*		    String line = null;
-		    String [] values=null;*/
 		    
 		    Area[][] tempTerrainBuilder = new Area[SIZE][SIZE];
 		    
@@ -48,10 +43,13 @@ public class MapCreatorFromTxt implements IMapCreator {
 		    for (int y = 0; y < SIZE; y++) {
 		    	for (int x = 0; x < SIZE; x++) {
 		    		
+		    		// get line data from file
 		    		String[] line = reader.readLine().split(" ");
 		    		
+		    		// convert string data to double
 		    		double[] data = parseLineFromSource(line);
 		    		
+		    		// Set Area type based on data provided
 		    		if (data[2] >= 0.5 || (data[2] < 0.5 && data[1] > threshold * 0.5)) {
 		    			tempTerrainBuilder[y][x] = new HighArea(data[0], data[1], data[2]);
 		    		}
@@ -69,25 +67,6 @@ public class MapCreatorFromTxt implements IMapCreator {
 		    // sends terrain data to TerrainScanner class
 		    tScanner.setTerrain(tempTerrainBuilder);
 		    
-		    
-		    
-		    		/*for(int i=0;i<SIZE;i++)
-		    		{
-		    			for(int j=0;j<SIZE;j++)
-		    			{
-		    				
-		    				
-		    				
-		    				
-		    						if((line = reader.readLine())!=null)
-		    			    		values = line.split(" ");
-		    			    		Area a = new Area();
-		    			    		a.setBasicEnergyCost(Double.valueOf(values[0]));
-		    			    		a.setElevation(Double.valueOf(values[1]));
-		    			    		a.setRadiation(Double.valueOf(values[2]));
-		    			    		path[i][j] = a;
-		    			}
-		    		}*/
 		} 
 		
 		catch(IOException x) {
@@ -101,40 +80,16 @@ public class MapCreatorFromTxt implements IMapCreator {
 	 * return the Scanner. 
 	 */
 	public TerrainScanner getScanner() {
-		//tScanner.setTerrain(path);
+		
 		return tScanner;
 	}
 
 	@Override
 	public void setScanner(TerrainScanner scanner) {
+		
 		tScanner = scanner;
 	}
 	
-	public char[][] generateMap (int threshold){
-		
-		char[][]map = new char[SIZE][SIZE];
-		
-		for(int i = 0; i < SIZE; i++) {
-			for(int j = 0; j < SIZE; j++){
-				map[i][j] = checkIfPassable(i, j, threshold) ?  ' ' : 'X' ;
-				
-			}
-		}
-		return map;
-	}
-
-	/**
-	 * This method check a locations elevation and determines if it is possible 
-	 * by the rover or not. 	
-	 * @param row
-	 * @param col
-	 * @param threshold
-	 * @return
-	 */
-	public boolean checkIfPassable(int row, int col, int threshold){
-		return elevations[row][col] <= threshold;
-	}
-
 	/**
 	 * Converts incoming string data into double float representation.
 	 * It is assumed data is safe coming in as source is known.
@@ -150,9 +105,5 @@ public class MapCreatorFromTxt implements IMapCreator {
 	    		Double.parseDouble(source[1].trim()), Double.parseDouble(source[2].trim()) };
 		
 	    return result;
-	   // return new Area(result[0], result[1], result[2]);
-		
 	}
-	
-	
 }

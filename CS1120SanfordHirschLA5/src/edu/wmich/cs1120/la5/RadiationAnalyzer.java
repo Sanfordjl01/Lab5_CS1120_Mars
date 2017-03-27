@@ -1,6 +1,5 @@
 /************************************************
- * @author : Jonathan Sanford
- * @author : Chad Hirsch
+
  * Class: CS II - 1120 - Thur - 2:30pm
  * Lab 5 - Mars Rover 2.0
  * Due 03/30/2017 - 11:59pm
@@ -18,10 +17,18 @@ package edu.wmich.cs1120.la5;
 
 import java.util.ArrayList;
 
+/**
+ * This class represents the part of the rover that
+ * can evaluate the radiation of a cell/Area visited.
+ * 
+ * @author : Jonathan Sanford
+ * @author : Chad Hirsch
+ */
 public class RadiationAnalyzer implements IRover {
 	
 	ArrayList <IArea> list = new ArrayList<IArea>();
-	Double result;
+	Double result; // amount of radiation
+	
 	@Override
 	public ArrayList<IArea> getPath() {
 		return list;
